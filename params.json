@@ -1,0 +1,6 @@
+{
+  "name": "Rails-tutorial",
+  "tagline": "Repository for www.railstutorial.org sample app",
+  "body": "# Ruby on Rails Tutorial sample application\r\n\r\nThis is the sample application for\r\n[*Ruby on Rails Tutorial:\r\nLearn Web Development with Rails*](http://www.railstutorial.org/)\r\nby [Michael Hartl](http://www.michaelhartl.com/).\r\n\r\n## License\r\n\r\nAll source code in the [Ruby on Rails Tutorial](http://railstutorial.org/)\r\nis available jointly under the MIT License and the Beerware License. See\r\n[LICENSE.md](LICENSE.md) for details.\r\n\r\nFor more information, see the\r\n[*Ruby on Rails Tutorial* book](http://www.railstutorial.org/book).\r\n",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
