@@ -1,17 +1,22 @@
 <div class="center jumbotron">
-  <h1>Welcome to the Sample App</h1>
+  <h1>Welcome to Microblogger</h1>
 
   <h2>
-    This is the home page for the
-    <a href="http://www.railstutorial.org/">Ruby on Rails Tutorial</a>
-    sample application.
+    A twitter like microblogging site created as part of the
+    <a href="http://www.railstutorial.org/">Ruby on Rails Tutorial</a>.
   </h2>
 
   <%= link_to "Sign up now!", signup_path, class: "btn btn-lg btn-primary" %>
 </div>
 
 <%= link_to image_tag("rails.png", alt: "Rails logo"),
-            'http://rubyonrails.org/' %>
+            'http://rubyonrails.org/',
+            class: "col-xs-12 col-sm-6 col-md-3" %>
+<%= link_to image_tag("cover-web.png", alt: "Ruby on Rails Logo"),
+            'https://www.railstutorial.org/book',
+            class: "col-xs-12 col-sm-6 col-md-3" %>
+<%= link_to image_tag("TI-marq-banner-white01.jpeg", alt: "Technology Improv logo"),
+            'http://www.technologyimprov.com/' %>
    
 <!-- Exercise in 5.1.1 -->        
 <%#= image_tag("kitten.png", alt: "Obligatory cat Photo", height: '20%', width: '20%') %>
