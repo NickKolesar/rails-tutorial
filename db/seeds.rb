@@ -33,5 +33,16 @@ User.create!(name:  "Percey Fredrickstein Von Musel Klossowski de Rolo III",
                password_confirmation: password,
                activated: true,
                activated_at: Time.zone.now)
+end
 
+users = User.order(:created_at).take(6)
+50.times do
+  #content = Faker::Lorem.sentence(5)
+  content = [Faker::Hacker.say_something_smart[0,140], 
+             Faker::Hipster.sentence[0,140], 
+             Faker::ChuckNorris.fact[0,140],
+             Faker::Lorem.sentence[0,140],
+             Faker::Company.bs[0,140],
+             (Faker::Superhero.name + ": " + Faker::Superhero.power)[0,140]] 
+  users.each { |user| user.microposts.create!(content: content.sample) }
 end
